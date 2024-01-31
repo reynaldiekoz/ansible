@@ -1,0 +1,25 @@
+[ec2_source]
+#10.10.12.1 ansible_user=ubuntu ansible_private_key_file=/home/ubuntu/ansible/key.pem
+#10.10.12.2 ansible_user=ubuntu ansible_private_key_file=/home/ubuntu/ansible/key.pem
+
+[ec2_dest]
+#10.10.12.3 ansible_user=ubuntu ansible_private_key_file=/ubuntu/key.pem
+#10.10.12.4 ansible_user=ubuntu ansible_private_key_file=/ubuntu/key.pem
+
+[hosts_to_add_key]
+#10.10.12.5 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.6 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.7 ansible_ssh_port=22 ansible_user=jenkins
+#10.10.12.8 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.9 ansible_ssh_port=22 ansible_user=ubuntu
+
+[webservers]
+#10.10.12.10 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.11 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.12 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.13 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.14 ansible_ssh_port=22 ansible_user=ubuntu
+
+[ssm-install]
+#10.10.12.15 ansible_ssh_port=22 ansible_user=ubuntu
+#10.10.12.16 ansible_ssh_port=22 ansible_user=ubuntu
